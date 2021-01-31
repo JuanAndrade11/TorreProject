@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 
 import PostMessage from '../models/postMessage.js'
+import rake from 'node-rake'
 
 export const getPosts = async (req, res) =>{
     try{
@@ -13,9 +14,12 @@ export const getPosts = async (req, res) =>{
 }
 
 export const createPosts = async (req, res) => {
+    
     const post = req.body;
-
+    
+    
     const newPostMessage = new PostMessage({ ...post, creator: req.userId, createdAt: new Date().toISOString() })
+    
 
     try {
         await newPostMessage.save();
