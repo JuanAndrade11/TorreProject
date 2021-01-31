@@ -13,7 +13,7 @@ export default makeStyles((theme) => ({
     backgroundColor: 'white',
   },
   heading: {
-    color: 'Black',
+    color: 'darkgrey',
     textDecoration: 'none',
   },
   image: {
