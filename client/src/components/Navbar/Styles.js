@@ -10,10 +10,10 @@ export default makeStyles((theme) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '10px 50px',
-    backgroundColor: '#4e565c',
+    backgroundColor: 'white',
   },
   heading: {
-    color: 'lightgrey',
+    color: 'darkgrey',
     textDecoration: 'none',
   },
   image: {
