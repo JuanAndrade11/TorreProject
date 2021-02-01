@@ -20,7 +20,7 @@ app.get('/',(req,res)=>{
     res.send("Welcome to Torre:ss API")
 });
 
-const CONNECTION_URL = 'mongodb://admin:admin@torress-mongo-production/torress'
+const CONNECTION_URL = 'mongodb://admin:jyDdMC4Yc@torress-mongo-production/admin'
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser:true, useUnifiedTopology:true})
